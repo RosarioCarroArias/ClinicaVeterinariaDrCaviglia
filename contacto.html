@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Clínica Veterinaria Dr.Caviglia</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/> <!--Animaciones-->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> <!--tipografia Playfair Display-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"><!--tipografia Lato-->
+        
+    </head>
+
+    
+    <body>
+        <nav>
+            <div class="container-fluid-nav"> <!--NAV-->
+                <div class="row">
+                    <a href="index.html"><img src="multimedia/logo-blanco.png" alt="logoblanco" class="logoBlanco" ></a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="servicios.html" class="nav-link">Servicios</a>
+                    <a href="quienessomos.html" class="nav-link">Quiénes Somos</a>
+                    <a href="comunidad.html" class="nav-link">Comunidad C.V.C</a>
+                    <a href="preguntasfrecuentes.html" class="nav-link">Preguntas Frecuentes</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </div>  
+            </div>
+        </nav>
+
+        <main>
+            <form class="container-fluid-form"><!--FORMULARIO CONTACTO-->
+                <div class="form-texto">
+                    <p>Complete el siguiente formulario con sus datos y deje su consulta. Nos contacteremos a la brevedad.</p>
+                    <hr>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                        <label>Apellido</label>
+                        <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                    </div>
+
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    
+                    <label for="exampleFormControlInput1">Teléfono</label>
+                    <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="11 XXXX XXXX">
+        
+                    <select class="custom-select">
+                        <option selected>Seleccione el tipo de mascota</option>
+                        <option value="1">Canino</option>
+                        <option value="2">Felino</option>
+                    </select>
+
+                    <label for="customRange2">Seleccione la edad aproximada de su mascota</label><br>
+                    <input type="range" class="custom-range" min="0" max="4" id="customRange2">
+                    
+                    <div class="row">   
+                        <div class="col">
+                            <p>Menor a 1 Año</p>
+                        </div>
+                        <div class="col">
+                            <p>1 a 5 Años</p>
+                        </div>
+                        <div class="col">
+                            <p>6 a 10 Años</p>
+                        </div>
+                        <div class="col">
+                            <p>11 Años o Mayor</p>
+                        </div>
+                        <div class="col">
+                            <p>Desconozco la Edad</p>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="form-question-check">
+                    <p>¿Es la primer consulta que realiza en C.V.C?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">Sí</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escriba aquí su consulta."></textarea>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+
+        <footer class="container-fluid footer">
+            <!--FOOTER-->
+            <div class="row datos">
+                <div class="col-12">
+              <div class="footerMapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d52530.912983919836!2d-58.4104398!3d-34.6248392!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95bccb2d9056be49%3A0xf44b255419da3180!2sclinica%20veterinaria%20dr%20caviglia!3m2!1d-34.6249148!2d-58.375420299999995!5e0!3m2!1ses-419!2sar!4v1599013420695!5m2!1ses-419!2sar" width=400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      
+                <h6 class="footerDireccionMapa"></h6>
+                  Chacabuco 1423, San Telmo. CABA. Teléfono
+                </h6>
+              </div>
+      
+              <div class="redesSoc">
+              <div class="footerIconosRedes">
+                  <a href=" https://www.facebook.com/CavigliaVeterinaria/">
+                  <i class="fab fa-facebook-f f"></i></a>
+              </div>
+      
+              <div class="footerIconosRedes">
+                  <a href="https://www.instagram.com/caviglia.veterinaria/">
+                  <i class="fab fa-instagram i"></i></a>
+              </div>
+      
+              <div class="footerIconosRedes">
+                  <a href="https://twitter.com/">
+                  <i class="fab fa-twitter t"></i></a>
+              </div>   
+      
+              <div class="footerIconosRedes">
+                  <a href="https://www.behance.net/rosariocarro1">
+                      <i class="fab fa-behance b"></i></a>
+              </div> 
+              </div>  
+      
+              <div class="footerFirma">
+                  <h6>2020 ROSAMEL ® | Todos los derechos reservados</h6>
+                </div>     
+            </div>
+          </div>
+          </footer>
+      
+          <script
+            src="https://kit.fontawesome.com/f99fd89f2a.js"
+            crossorigin="anonymous"
+          ></script>
+          <script src="js/wow.min.js"></script>
+          <script>
+            new WOW().init();
+          </script>
+      
+          <!-- JS, Popper.js, and jQuery AL FONDO DEL BODY PARA OPTIMIZAR LA PAGINA - CARGA PRIMERO LOS ELEMENTOS Y LUEGO LOS SCRIPTS -->
+          <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+          ></script>
+    </body>
+</html>

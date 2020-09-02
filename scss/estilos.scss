@@ -1,0 +1,368 @@
+//variables color
+$primer-color: #63297e;
+$segundo-color: #f4f4f4;
+$tercer-color: #63297e36;
+$cuarto-color: #a200ff;
+
+//variables texto
+$texto-destacado: "Playfair Display", serif;
+$texto-contenido: "Lato", 5rem;
+$texto-detalle: "Lato", 5rem;
+
+html {
+  font-size: 62, 5%; //modifica el valor por defecto de 16px a 10 px // 1rem es igual a 10px
+  width: 100vw;
+  height: 100vh;
+  background-color: $primer-color;
+  background-repeat: repeat;
+}
+
+nav {
+  width: 100%;
+  height: 7rem;
+  background-color: $primer-color;
+  background-repeat: repeat;
+  display: inline-block;
+  position: fixed;
+
+  .container-fluid-nav {
+    color: $segundo-color;
+    margin: -1rem 7rem 2rem 7rem;
+
+    a {
+      text-decoration: none;
+      color: $segundo-color;
+    }
+
+    .logoBlanco {
+      width: 7rem;
+      margin-left: 7rem;
+      margin-right: 2rem;
+      animation: bounce;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      position: relative;
+    }
+
+    .nav-link {
+      justify-content: space-evenly;
+      padding: 3rem 2rem 1rem 2rem;
+      position: relative;
+    }
+  }
+}
+
+.container-fluid-header {
+  //margin: 0rem 7rem 0rem 7rem;
+  background-color: $primer-color;
+  background-repeat: repeat;
+  display: inline-block;
+
+  .imagenHeader {
+    margin: 2rem 3rem 1rem 3rem;
+    padding: 0rem 1rem 0rem 4rem;
+    overflow: clip;
+    justify-content: center;
+    width: 70rem;
+    height: 30rem;
+  }
+
+  .tituloHeader {
+    display: flex;
+    overflow: clip;
+    text-align: left;
+    font-family: $texto-destacado;
+
+    .marcaHeaderBox {
+      margin: -4rem 0.5rem 5rem 17rem;
+      padding: 0.5rem 0.5rem 0.5rem 2rem;
+      width: 20rem;
+      height: 15rem;
+      background-color: $segundo-color;
+      font-size: 3rem;
+      color: $primer-color;
+      border-radius: 35px 0px 35px 0px;
+      -moz-border-radius: 35px 0px 35px 0px;
+      -webkit-border-radius: 35px 0px 35px 0px;
+      border: 2px solid $primer-color;
+    }
+
+    .textoHeader {
+      margin-right: 1rem;
+      margin-left: 3rem;
+      margin-top: 3rem;
+      padding: 0.5rem 0.5rem 0.5rem 2rem;
+      font-size: 0, 5rem;
+      color: $segundo-color;
+    }
+  }
+}
+
+.container-fluid-body {
+  //margin: -5rem 10rem 5rem 10rem;
+  background-color: $primer-color;
+  background-repeat: repeat;
+  font-family: $texto-contenido;
+  color: $segundo-color;
+  text-align: center;
+  display: inline;
+
+  .jumbotronIntro {
+    width: 30rem;
+    margin: 2rem 30rem 3rem 30rem;
+    background-color: $primer-color;
+    background-repeat: repeat;
+  }
+
+  .cardIntro {
+    display: flex;
+    font-size: 0.5rem;
+    border-radius: 1px 1px 1px 1px;
+    margin: 1rem 10rem 3rem 10rem;
+    background-color: $primer-color;
+    background-repeat: repeat;
+
+    .card-body {
+      padding: 0.5rem 4rem 0.5rem 4rem;
+      justify-content: space-between;
+      background-color: $primer-color;
+      background-repeat: repeat;
+      font-size: 0, 5rem;
+
+      .card-img-top {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      .card-link {
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        background-color: $segundo-color;
+        color: $primer-color;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $primer-color;
+  background-repeat: repeat;
+  font-family: $texto-contenido;
+  color: $segundo-color;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+
+  .datos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+
+    .footerMapa {
+      text-align: center;
+    }
+
+    .redesSoc {
+      display: flex;
+
+      .footerIconosRedes {
+        background-color: $primer-color;
+        background-repeat: repeat;
+        width: 3rem;
+        height: 2rem;
+        justify-content: space-between;
+        margin: 0rem 1rem 2rem 3rem;
+        padding: 2rem 0.5rem 0rem 0.5rem;
+
+        .f {
+          color: $segundo-color;
+
+          &:hover {
+            color: $cuarto-color;
+          }
+        }
+
+        .t {
+          color: $segundo-color;
+
+          &:hover {
+            color: $cuarto-color;
+          }
+        }
+
+        .i {
+          color: $segundo-color;
+
+          &:hover {
+            color: $cuarto-color;
+          }
+        }
+
+        .b {
+          color: $segundo-color;
+
+          &:hover {
+            color: $cuarto-color;
+          }
+        }
+      }
+    }
+
+    .footerFirma {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      margin-top: 2rem;
+
+      h6 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+//////////////////////////ESTILOS SECCION CONTACTO//////////////////////////////
+
+form {
+  display: inline;
+}
+
+.container-fluid-form {
+  border-radius: 1px 1px 1px 1px;
+  color: $primer-color;
+  font-size: 0, 5rem;
+
+  .form-texto {
+    margin: 9rem 7rem 0rem 10rem;
+    padding: 1rem 1rem 1rem 5rem;
+    display: inline-flex;
+    position: relative;
+
+    p {
+      font-family: $texto-destacado;
+      font-size: 1rem;
+      line-height: normal;
+      display: flex;
+    }
+  }
+
+  .form-group {
+    margin: 0rem 15rem 0rem 15rem;
+    padding: 0rem 4rem 0rem 4rem;
+    font-style: bold;
+    background-color: $tercer-color;
+
+    p {
+      justify-content: space-between;
+      color: $primer-color;
+      font-style: oblique;
+    }
+
+    label {
+      padding-top: 1rem;
+    }
+
+    .custom-select {
+      margin-top: 2rem;
+    }
+  }
+
+  .form-question-check {
+    background-color: $tercer-color;
+    background-repeat: repeat;
+    margin: 0rem 15rem 0rem 15rem;
+    padding: 1rem 2rem 0rem 4rem;
+    justify-content: space-between;
+
+    .form-check {
+      display: flex;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 22rem;
+  }
+}
+
+///////////////////////ESTILOS SERVICIOS////////////////////////////////////////
+.container-fluid-media {
+  display: inline;
+
+  .media {
+    margin: 3rem 12rem -1rem 3rem;
+    padding: 1rem 2rem -1rem 2rem;
+    justify-content: space-around;
+
+    .mediaUno {
+      display: inline-flex;
+      padding-top: 5rem;
+    }
+
+    .mr-3 {
+      border-radius: 5px 5px 5px 5px;
+      margin: 0rem 1rem 0rem 11rem;
+      width: 7.5rem;
+      height: 12.5rem;
+    }
+
+    .media-body {
+      border-radius: 2px 2px 2px 2px;
+      background-color: $tercer-color;
+      color: $primer-color;
+      text-align: left;
+      overflow-y: scroll;
+      padding: 2rem 1rem 4rem 1rem;
+
+      h5 {
+        font-family: $texto-destacado;
+      }
+    }
+  }
+}
+
+.container-fluid-carousel {
+  margin: 5rem 7rem 2rem 15rem;
+  justify-content: center;
+  display: inline;
+
+  .carousel-inner {
+    display: flex;
+    margin-left: 14rem;
+    padding: 0rem 0rem 33rem 1rem;
+    width: 25rem;
+    height: 15rem;
+  }
+
+  .mapaCarousel {
+    width: 40rem;
+    height: 30rem;
+    padding: 1rem 0rem 0rem 0rem;
+    background-color: $tercer-color;
+
+    p {
+      padding: 1rem 2rem 1rem 2rem;
+      font-family: $texto-contenido;
+      text-align: justify;
+      font-size: 0, 5rem;
+      color: $primer-color;
+
+      a {
+        font-style: italic;
+        color: $primer-color;
+      }
+    }
+
+    .mapaGoogleCarousel {
+      justify-content: center;
+      padding: 0rem 1rem 1rem 1rem;
+      width: 40rem;
+      height: 15rem;
+    }
+  }
+}
